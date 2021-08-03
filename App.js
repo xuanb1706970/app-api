@@ -58,7 +58,7 @@ export default class App extends React.Component{
 
     async takeSnap(){
       if(this.camera){
-        const options = { quality: 0.1, base64: true, mirrorImage: true };
+        const options = { quality: 0.5, base64: true, mirrorImage: true };
         let photo = await this.camera.takePictureAsync(options)
         try{
           var formdata = new FormData()
